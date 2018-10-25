@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="7dp"
+    android:layout_marginEnd="12dp"
+    android:layout_marginStart="12dp"
+    android:layout_marginTop="7dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/image_menu"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/text_judul_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/image_menu"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/image_menu"
+            android:text="Judul Menu"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_deskripsi_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/text_judul_menu"
+            android:layout_below="@+id/text_judul_menu"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="4sp"
+            android:text="Informasi penting mengenai penggunaan Aplkasi Belajar Bahasa Isyarat"
+            android:textSize="12.5sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
